@@ -1,5 +1,6 @@
 #!/bin/bash
 #####################################################################
+#                                                                   #
 #                           Author                                  #
 #                       tdortiz@ncsu.edu                            #
 #                                                                   #
@@ -10,11 +11,15 @@
 # Allows for deep copying (including commits/branches) of a github  #
 # repo.                                                             #
 #                                                                   #
+# It does so by creating a new repo for you on your github account  #
+# with the name of the old repo and mirrors the old repo to the new.#
+#                                                                   #
 # This is useful for moving repos from one account to another.      #
 #                                                                   #
 #####################################################################
 
 #####################################################################
+#                                                                   #
 #                           Running                                 #
 #                     chmod +x deepCopyRepo.sh                      #
 #                                                                   #
