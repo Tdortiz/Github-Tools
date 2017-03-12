@@ -6,3 +6,14 @@ Allows for deep copying (including commits/branches/collaborators/ect.) of a git
 It does so by creating a new repo on the user's account and mirroring the old repo to the new one.
 
 This is useful for moving repos from one account to another.
+
+Ran by:
+* ./deepCopyRepo.sh
+* ./deepCopyRepo.sh <username> <old_repo_url> 
+
+## createRepo.sh
+Allows for creations of a github repository from the command line.
+
+Ran by:
+* ./createRepo.sh
+* ./createRepo.sh <username> <new repo name> 
