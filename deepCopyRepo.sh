@@ -31,8 +31,6 @@
 
 # Clean the terminal
 clear
-printf "This script allows for deep copying (including commits/branches) of a github repo to a new repo.\n"
-printf 'Run Options: "./deepCopyRepo.sh" OR "./deepCopyRepo.sh <username> <old_repo_url>"\n\n'
 
 username=""
 oldRepoUrl=""
@@ -40,6 +38,8 @@ oldRepoUrl=""
 # Get input from user or cli
 if [ $# -eq 0 ] 
 then 
+    printf "This script allows for deep copying (including commits/branches) of a github repo to a new repo.\n"
+    printf 'Run Options: "./deepCopyRepo.sh" OR "./deepCopyRepo.sh <username> <old_repo_url>"\n\n'
     read -p "Github Username :  " username
     read -p "Repo To Copy url:  " oldRepoUrl
 else
