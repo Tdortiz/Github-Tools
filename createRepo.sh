@@ -8,8 +8,7 @@
 
 #####################################################################
 #                                                                   #
-# Allows for creation of a github repository                        #
-#                                                                   #
+# Allows for creation of a github repository on the user's github   #
 #                                                                   #
 #####################################################################
 
@@ -42,5 +41,5 @@ else
     newRepoName=$2
 fi
 
-# Create new repository on github with name of old repo
-curl -u $username https://api.github.com/user/repos -d '{"name":"'$newRepoName'", "description":"Created via API", "auto_init":"true"}'
+# Create new repository on the user's github
+curl -u $username https://api.github.com/user/repos -d '{"name":"'$newRepoName'", "description":"Created via Github API", "auto_init":"true"}'
