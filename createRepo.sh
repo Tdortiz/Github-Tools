@@ -29,6 +29,13 @@ clear
 username=""
 newRepoName=""
 
+# A function that checks requirements for the script to run successfully
+function checkRequirements {
+    command -v curl >/dev/null 2>&1 || { echo >&2 "I require curl but it's not installed.  Aborting."; exit 1; }
+}
+
+checkRequirements
+
 # Get input from user or cli
 if [ $# -eq 0 ] 
 then
