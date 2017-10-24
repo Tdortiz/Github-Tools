@@ -37,8 +37,8 @@ checkRequirements
 # Get input from user or cli
 if [ $# -eq 0 ] 
 then
-    printf "This script creates a new github repo.\n"
-    printf 'Run Options: "./show-repos.sh" OR "./show-repos.sh <username>"\n\n'
+    printf "This script returns all of a user's public repos.\n"
+    printf 'Run Options: "./show-repos.sh <username>"\n\n'
     read -p "USER :  " USER
 else
     USER=$1
