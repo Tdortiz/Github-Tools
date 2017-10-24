@@ -8,7 +8,7 @@
 
 #####################################################################
 #                                                                   #
-# Allows for creation of a github repository on the user's github   #
+#                Gets all of a user's public repos                  #
 #                                                                   #
 #####################################################################
 
